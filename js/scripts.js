@@ -1,38 +1,15 @@
-
-
-
-//Objects with properties 
-let destination1 = {
-  state: "FL",
-  city: "Miami",
-  landmarks: ["Hollywood Beach", "Havana street"], 
-  year: 2021
+//Constructor
+function Destination(state, city, landmarks, year) {
+  this.state = state;
+  this.city = city;
+  this.landmarks = landmarks;
+  this.year = year;
 }
 
-let destination2 = {
-  state: "FL",
-  city: "Orlando",
-  landmarks: ["Disney World", "Universal Studios"], 
-  year: 2021
-}
+//Instance 
+let destination1 = new Destination ("FL", "Miami",["Hollywood Beach", "Havana street"], 2021)
+let destination2 = new Destination ("FL", "Orlando",["Disney World", "Universal Studios"], 2021)
+let destination3 = new Destination ("WY", "Jackson hole",["Grand Teton National Park", "Yellowstone National Park"], 2020)
+let destination4 = new Destination ("MA", "Boston",["Harvard University", "Boston Marketplace"], 2019)
 
-let destination3 = {
-  state: "WY",
-  city: "Jackson hole",
-  landmarks: ["Grand Teton National Park", "Yellowstone National Park"], 
-  year: 2020
-}
-
-let destination4 = {
-  state: "MA",
-  city: "Boston",
-  landmarks: ["Harvard University", "Boston Marketplace"], 
-  year: 2019
-}
-
-let destination5 = {
-  state: "CA",
-  city: "Vancouver",
-  landmarks: ["Capilano Suspension Bridge Park", "Cypress Mountain ski resort"], 
-  year: 2019
-}
+let destination5 = new Destination ("CA", "Vancouver",["Capilano Suspension Bridge Park", "Cypress Mountain ski resort"], 2019)

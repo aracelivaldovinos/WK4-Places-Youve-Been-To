@@ -13,3 +13,17 @@ Expected Output:
   city: "Miami",
   landmarks: ["Hollywood Beach", "Havana street"], 
   year: 2021
+
+  Test: "It will have a constructor to group similar properties"
+Code: 
+function Destination(state, city, landmarks, year) {
+  this.state = state;
+  this.city = city;
+  this.landmarks = landmarks;
+  this.year = year;
+}
+Expected Output: 
+  state: "FL",
+  city: "Miami",
+  landmarks: ["Hollywood Beach", "Havana street"], 
+  year: 2021
